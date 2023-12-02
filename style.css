@@ -80,8 +80,9 @@ header{
     width: 100%;
     pointer-events: none;
 }
+/*SEC*/
 .sec{
-    margin-top: 110px;
+    margin-top: 80px;
     position: relative;
     background: #003329;
     padding: 100px;
@@ -97,6 +98,91 @@ header{
     font-weight: 300;
 
 }
+/*SEC CONTACT*/
+.sec_contact{
+  justify-content: center;
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  position: relative;
+  background: #003329;
+  padding: 100px;
+}
+.sec_contact h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sec_contact p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+
+}
+.card_contact{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 310px;
+  min-width: 250px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card_contact img {
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  transition: 0.5s ease;
+}
+.card_contact:hover img {
+  transform: scale(1.5);
+}
+.card_contact figcaption {
+  position: absolute;
+  padding: 15px 20px 40px;
+  bottom: 0;
+  z-index: 1;
+}
+.card_contact figcaption::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(30deg, rgb(255, 79, 0), #fff);
+  opacity: 0.8;
+  z-index: -1;
+}
+.card_contact h3 {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.card_contact p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+}
+.card_contact a {
+
+  position: absolute;
+  bottom: 10px;
+  display: inline-block;
+  font-size: 0.85em;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: rgb(255, 79, 0);
+  border-radius: 6px;
+  z-index: 1;
+  transition: 0.5s;
+}
+.card_contact a:hover {
+  background: white;
+}
+
 /*FOOTER*/
 footer {
     background-color: #003329;
@@ -105,7 +191,6 @@ footer {
     padding: 45px;
   }
   .footer-left {
-    margin-left: 5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -123,7 +208,7 @@ footer {
   }
   .software-logo p {
     font-size: 18px;
-    margin-left:-440px;
+    margin-left:-650px;
     margin-top: 80px;
     width: 500px; /* Điều chỉnh kích thước của logo phần mềm theo mong muốn */
     height: auto;
