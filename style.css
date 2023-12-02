@@ -152,8 +152,8 @@ header{
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(30deg, rgb(255, 79, 0), #fff);
-  opacity: 0.8;
+  background: #003329;
+  opacity: 0.7;
   z-index: -1;
 }
 .card_contact h3 {
@@ -162,6 +162,7 @@ header{
   margin-bottom: 5px;
 }
 .card_contact p {
+  padding-bottom: 5px;
   font-size: 0.8em;
   line-height: 1.6em;
 }
