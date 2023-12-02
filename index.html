@@ -9,6 +9,63 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
+  <style>
+    .card-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      align-items: center;
+      width: 100%;
+      height: 80vh;
+      }
+    .card {
+      overflow: hidden;
+      width: 320px;
+      height: 500px;
+      border-radius: 15px;
+      border: 4px solid #fff;
+      position: relative;
+      transition: transform 0.3s;
+      margin: 20px;
+      }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      }
+    .card_body {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: -100%;
+      position: absolute;
+      background: #1f3d4738;
+      backdrop-filter: blur(5px);
+      border-radius: 15px;
+      color: white;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      }
+    .card:hover .card_body{
+      right: 0;
+      }
+    .card:hover {
+      transform: scale(1.05);
+      }
+    .card_title {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 500;
+      }
+    .card_subtitle {
+      text-transform: capitalize;
+      font-size: 10px;
+      font-weight: 300;
+      }
+  </style>
 <body>
     
     <header>
@@ -35,9 +92,39 @@
 
     <section class="sec">
       <h2>POLY CAR INFOMATION</h2>
-      <p>
-      Lorem ipsum dolor sit amet. Sit dolore nemo vel exercitationem laborum in tempore dicta. Ut sint facere est velit consequatur eos nobis laudantium ut labore tempore aut aliquid vitae. Id perspiciatis rerum rem corrupti velit nam error mollitia et nostrum quibusdam aut unde mollitia et quod ipsa aut fuga nemo. </p><p>Qui dolores velit sed possimus deserunt et autem Quis sed voluptatum exercitationem cum voluptatum corporis ea dolores obcaecati qui sunt consequatur. Sit eaque error et aperiam beatae quo unde nisi. </p><p>Eum natus pariatur cum iusto pariatur est iusto nemo et autem sequi eos iste blanditiis eos dolorem sunt et odio soluta. Et doloremque quam aut saepe vitae et cupiditate impedit quo dolorem fugit. Aut tempore enim et repellendus galisum et culpa perferendis nam distinctio cupiditate? Sit perspiciatis repudiandae et omnis autem est doloribus blanditiis ut pariatur consectetur. </p><p>Non voluptatem quae et corrupti quas id internos repudiandae et dolorem corrupti eos sint quaerat et omnis autem. Qui tempore eligendi aut neque nulla et totam cumque rem Quis quasi ut libero autem est voluptatem reiciendis in dolorum minus? Ex facere doloribus eos velit minima eum eaque ipsum et eligendi possimus id labore laudantium. </p><p>Et galisum inventore rem reprehenderit quasi ut nobis libero aut odio libero. Ut adipisci voluptate qui odit cumque hic blanditiis voluptates et omnis aliquid. </p><p>Qui labore dignissimos et omnis totam et vitae recusandae et maiores possimus sed illo similique et adipisci enim. Et rerum magni qui itaque quae sed pariatur asperiores? Et ipsum quisquam 33 blanditiis deleniti in laborum nulla in veritatis voluptatem ut excepturi iusto. </p><p>Eos quam temporibus ad quis unde eos dolorem accusantium. Ut consequatur temporibus ut nobis voluptas sit incidunt praesentium quo ratione alias. </p><p>Est minus autem qui odio molestiae qui voluptates voluptatem et voluptas repellendus id voluptas repellat et tempore inventore. Sed molestias ipsum id voluptate voluptatem et ullam aperiam. Et officia autem eos iure laboriosam quo consequatur blanditiis qui dolorum veniam. </p><p>Ad deserunt delectus hic dolor magnam non dolore laboriosam. Nam error nemo est quas voluptatem vel aliquam beatae vel itaque architecto et totam corrupti. Id animi distinctio et autem veritatis ut distinctio explicabo et laboriosam magni in animi culpa 33 inventore atque in nesciunt saepe. </p><p>Id iure eveniet et voluptatem delectus et nostrum nulla sit possimus enim eum galisum dolorem. Et itaque omnis est aspernatur tempora non doloribus laudantium?<br><br>
-      </p>
+      <h1 style="color: white;">BAN LÃNH ĐẠO CẤP CAO</h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="ductruong.jpg" class="card_img" alt="">
+          <div class="card_body">
+            <h1 class="card_title">SOFTWARE ANALYSIS</h1>
+            <p class="card_subtitle">Đảm nhiệm trách nhiệm trong việc phân tích phần mềm và hệ thống.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="dinhhieu.jpg" class="card_img" alt="">
+          <div class="card_body">
+            <h1 class="card_title">CODER</h1>
+            <p class="card_subtitle">Phụ trách chính quản lý công tác hoàn thiện code phần mềm.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="dangkhoa.jpg" class="card_img" alt="">
+          <div class="card_body">
+            <h1 class="card_title">DISPLAY</h1>
+            <p class="card_subtitle">Bàn giao và thiết kế chính cho phần mềm.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="quangvinh.jpg" class="card_img" alt="">
+          <div class="card_body">
+            <h1 class="card_title">DATABASE</h1>
+            <p class="card_subtitle">Chịu trách nhiệm cung cấp các dữ liệu phần mềm.</p>
+          </div>
+        </div>
+        
+    </div>
+
     </section>
     
     <footer>

@@ -124,7 +124,7 @@ header{
 }
 .card_contact figcaption {
   position: absolute;
-  padding: 15px 20px 40px;
+  padding: 40px;
   bottom: 0;
   z-index: 1;
 }
