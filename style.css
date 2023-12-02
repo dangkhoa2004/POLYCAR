@@ -42,23 +42,6 @@ header{
     background: rgb(255, 79, 0);
     color: white;
 }
-/*POP-UP*/
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: #003329;
-  border: 1px solid #ccc;
-  z-index: 1000;
-  color: white;
-  border-radius: 15px;
-}
-.popup button {
-  float: right;
-}
 /*PARALLAX*/
 .parallax{
     position: relative;
