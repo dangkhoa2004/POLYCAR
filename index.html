@@ -9,7 +9,123 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
-
+    <style>
+        .sec {
+          height: 120vh;
+        }
+        .slide_show{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-30%);
+            width:70%;
+            height:70%;
+            padding: 20px;
+        }
+        #slide{
+            width:max-content;
+            margin-top:50px;
+        }
+        .item{
+            width:200px;
+            height:300px;
+            background-position: 50% 50%;
+            display: inline-block;
+            transition: 0.5s;
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            top:50%;
+            transform: translate(0,-50%);
+            
+        }
+        .item:nth-child(1),
+        .item:nth-child(2){
+            border: 2px solid white;
+            left:0;
+            top:0;
+            transform: translate(0,0);
+            border-radius: 0;
+            width:100%;
+            height:100%;
+            box-shadow: none;
+            border-radius: 20px;
+        }
+        .item:nth-child(3){
+          border: 2px solid white;
+          border-radius: 20px;
+          left:50%;
+        }
+        .item:nth-child(4){
+          border: 2px solid white;
+          border-radius: 20px;
+          left:calc(50% + 220px);
+        }
+        .item:nth-child(5){
+          border: 2px solid white;
+          border-radius: 20px;
+          left:calc(50% + 440px);
+        }
+        .item:nth-child(n+6){
+          border: 2px solid white;
+          border-radius: 20px;
+          left:calc(50% + 660px);
+          opacity: 0;
+        }
+        .item .content{
+          border: 2px solid white;
+          background-color: rgb(255, 79, 0);
+          border-radius: 20px;
+          position: absolute;
+          bottom: 5%;
+          left: 30px;
+          width:300px;
+          text-align: center;
+          padding:0;
+          color:#fff;
+          transform: translate(0,-50%);
+          display: none;
+          font-family: system-ui;
+        }
+        .item:nth-child(2) .content{
+            display: block;
+            z-index: 11111;
+        }
+        .item .name{
+            font-size: 40px;
+            font-weight: bold;
+            opacity: 0;
+            animation:showcontent 0.5s ease-in-out 1 forwards
+        }
+        @keyframes showcontent{
+            from{
+                opacity: 0;
+                transform: translate(0,100px);
+                filter:blur(33px);
+            }to{
+                opacity: 1;
+                transform: translate(0,0);
+                filter:blur(0);
+            }
+        }
+        .buttons{
+          position: absolute;
+          bottom:30px;
+          z-index: 222222;
+          text-align: center;
+          width:100%;
+        }
+        .buttons button{
+          border: 2px solid white;
+          font-size: 0.8em;
+          width:100px;
+          height:40px;
+          border-radius: 15px;
+          transition: 0.5s;
+        }.buttons button:hover{
+          background-color: white;
+        }
+    </style>
 <body>
     
     <header>
@@ -35,10 +151,46 @@
     </section>
 
     <section class="sec">
-        <h2>POLY CAR INFOMATION</h2>
-        <p>
-        Lorem ipsum dolor sit amet. Sit dolore nemo vel exercitationem laborum in tempore dicta. Ut sint facere est velit consequatur eos nobis laudantium ut labore tempore aut aliquid vitae. Id perspiciatis rerum rem corrupti velit nam error mollitia et nostrum quibusdam aut unde mollitia et quod ipsa aut fuga nemo. </p><p>Qui dolores velit sed possimus deserunt et autem Quis sed voluptatum exercitationem cum voluptatum corporis ea dolores obcaecati qui sunt consequatur. Sit eaque error et aperiam beatae quo unde nisi. </p><p>Eum natus pariatur cum iusto pariatur est iusto nemo et autem sequi eos iste blanditiis eos dolorem sunt et odio soluta. Et doloremque quam aut saepe vitae et cupiditate impedit quo dolorem fugit. Aut tempore enim et repellendus galisum et culpa perferendis nam distinctio cupiditate? Sit perspiciatis repudiandae et omnis autem est doloribus blanditiis ut pariatur consectetur. </p><p>Non voluptatem quae et corrupti quas id internos repudiandae et dolorem corrupti eos sint quaerat et omnis autem. Qui tempore eligendi aut neque nulla et totam cumque rem Quis quasi ut libero autem est voluptatem reiciendis in dolorum minus? Ex facere doloribus eos velit minima eum eaque ipsum et eligendi possimus id labore laudantium. </p><p>Et galisum inventore rem reprehenderit quasi ut nobis libero aut odio libero. Ut adipisci voluptate qui odit cumque hic blanditiis voluptates et omnis aliquid. </p><p>Qui labore dignissimos et omnis totam et vitae recusandae et maiores possimus sed illo similique et adipisci enim. Et rerum magni qui itaque quae sed pariatur asperiores? Et ipsum quisquam 33 blanditiis deleniti in laborum nulla in veritatis voluptatem ut excepturi iusto. </p><p>Eos quam temporibus ad quis unde eos dolorem accusantium. Ut consequatur temporibus ut nobis voluptas sit incidunt praesentium quo ratione alias. </p><p>Est minus autem qui odio molestiae qui voluptates voluptatem et voluptas repellendus id voluptas repellat et tempore inventore. Sed molestias ipsum id voluptate voluptatem et ullam aperiam. Et officia autem eos iure laboriosam quo consequatur blanditiis qui dolorum veniam. </p><p>Ad deserunt delectus hic dolor magnam non dolore laboriosam. Nam error nemo est quas voluptatem vel aliquam beatae vel itaque architecto et totam corrupti. Id animi distinctio et autem veritatis ut distinctio explicabo et laboriosam magni in animi culpa 33 inventore atque in nesciunt saepe. </p><p>Id iure eveniet et voluptatem delectus et nostrum nulla sit possimus enim eum galisum dolorem. Et itaque omnis est aspernatur tempora non doloribus laudantium?<br><br>
-        </p>
+      <h2>POLY CAR INFOMATION</h2>
+      <div class="slide_show">
+        <div id="slide">
+            <div class="item" style="background-image: url(app_slide1.png);">
+                <div class="content">
+                    <div class="name">ĐĂNG NHẬP</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(app_slide2.png);">
+                <div class="content">
+                    <div class="name">TRANG CHỦ</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(app_slide3.png);">
+                <div class="content">
+                    <div class="name">THUÊ XE</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(app_slide4.png);">
+                <div class="content">
+                    <div class="name">TÀI KHOẢN</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(app_slide5.png);">
+                <div class="content">
+                    <div class="name">QUẢN LÝ</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(app_slide6.png);">
+                <div class="content">
+                    <div class="name">HỢP ĐỒNG</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i>PREVIOUS</button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i>NEXT</button>
+        </div>
+    </div>
+    
     </section>
 
     <footer>
