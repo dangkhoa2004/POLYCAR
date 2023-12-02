@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    margin-right: 260px;
+    font-size: 2em;
+    color: rgb(255, 79, 0);
+    pointer-events: none;
+}
+/*NAVIGATION*/
+.navigation a {
+    text-decoration: none;
+    color: rgb(255, 79, 0); 
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;     
+}
+.navigation a:hover,
+.navigation a.active {
+    background: rgb(255, 79, 0);
+    color: white;
+}
+/*POP-UP*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #003329;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  color: white;
+  border-radius: 15px;
+}
+.popup button {
+  float: right;
+}
+/*PARALLAX*/
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.sec{
+    margin-top: 110px;
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+
+}
+/*FOOTER*/
+footer {
+    background-color: #003329;
+    color: white;
+    text-align: center;
+    padding: 45px;
+  }
+  .footer-left {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo-container {
+    margin-left: 2%;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .logo-container img {
+    width: auto; /* Điều chỉnh kích thước của logo theo mong muốn */
+    height: 50px;
+  }
+  .software-logo p {
+    font-size: 18px;
+    margin-left:-440px;
+    margin-top: 80px;
+    width: 500px; /* Điều chỉnh kích thước của logo phần mềm theo mong muốn */
+    height: auto;
+    text-align: left;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .email-container {
+    margin-top: 45px;
+    margin-right: 3%;
+    text-align: left;
+    margin-bottom: -15px;
+  }
+  
+  #email {
+    width: 230px; /* Điều chỉnh chiều rộng của ô nhập email theo mong muốn */
+    padding: 8px;
+  }
+  .text-links {
+    margin-right: 3.5%;
+    margin-top: -70px;
+    display: flex;
+  }
+  .text-links p {
+    margin: 0; /* Loại bỏ margin mặc định của các thẻ p */
+    margin-left: 15px; /* Khoảng cách giữa các mục thông tin */
+  }
+  .text-links a {
+    color: white;
+  
+  }
+  .text-links a:hover {
+    color: rgb(255, 79, 0);
+  }
+  button {
+    padding: 10px 20px;
+    background-color: rgb(255, 79, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-right: 10px; /* Thêm margin để tạo khoảng cách giữa các button */
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }

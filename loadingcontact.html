@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Page</title>
+    <link rel="icon" href="image/icon_fpt.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #003329;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .loader {
+            display: flex;
+            width: 70px;
+            height: 50px;
+        }
+        .loader span {
+            display: block;
+            width: 8px;
+            height: 100%;
+            margin: auto;
+            animation: animate 1s infinite ease-in-out;
+            animation-delay: calc(.1s * var(--i));
+        }
+        @keyframes animate {
+           0%, 40%, 100% {
+                transform: scaley(.05);
+           }
+            20% {
+                transform: scaley(1);
+            }
+        }
+        .loader span:nth-child(1) {
+            background: #7700ff;
+        }
+        .loader span:nth-child(2) {
+            background: #00f2ff;
+        }
+        .loader span:nth-child(3) {
+            background: #59ff00;
+        }
+        .loader span:nth-child(4) {
+            background: #fd0;
+        }
+        .loader span:nth-child(5) {
+            background: #ffa200;
+        }
+        .loader span:nth-child(6) {
+            background: #ff0063;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+    </div>
+    <div class="title" style="clear: both;">
+        <h2 style="color: white;">POLY CAR</h2>
+    </div>
+
+    <script>
+        // JavaScript code to redirect after 3 seconds
+        setTimeout(function(){
+            window.location.href = 'contact.html';
+        }, 500); // 3000 milliseconds = 3 seconds
+    </script>
+</body>
+</html>
